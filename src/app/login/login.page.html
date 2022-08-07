@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>PocketStore</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center">
+  <img src="../../assets/img/background.png" class="background-image">
+
+  <form [formGroup]="loginForm">
+
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="email" formControlName="email" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <ion-button type="submit" (click)="login()">
+      Login
+    </ion-button>
+
+    <ion-label >
+      <p Forecolor='danger'>{{loginError}}</p>
+    </ion-label>
+
+  </form>
+
+</ion-content>
