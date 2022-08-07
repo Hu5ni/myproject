@@ -22,7 +22,15 @@ const routes: Routes = [
   {
     path: 'detail/:loanID',
     loadChildren: () => import('./detail/detail.module').then( m => m.DetailPageModule)
+  },  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'image-view',
+    loadChildren: () => import('./modal/image-view/image-view.module').then( m => m.ImageViewPageModule)
   }
+
 ];
 @NgModule({
   imports: [

@@ -1,0 +1,25 @@
+
+
+
+<ion-content>
+   <div id="image">
+    <img
+    id="view"
+    [src]="image"
+    />
+
+
+   </div>
+
+
+   <div id="buttons">
+    <ion-button (click)="close()" fill="outline" color="danger">
+        Cancel
+    </ion-button>
+    <ion-button color="success" (click)="upload()">
+        Upload
+    </ion-button>
+
+   </div>
+
+</ion-content>
